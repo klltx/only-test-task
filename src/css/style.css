@@ -5,13 +5,29 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper {
-  width: 1600px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 160px;
 }
 
 .hidden {
   display: none;
+}
+
+.title-active>h3 {
+  color: #02818A;
+}
+
+.list__title>img {
+  margin-left: 40px;
+  transition: transform 0.4s ease-out;
 }
 
 .rotated-cross {
@@ -37,11 +53,14 @@
 
 .list__item {
   margin: 28px 0;
+  transition: height 2s;
 }
 
 .list__title {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.15s ease-out;
 }
 
 .list__title:hover {
@@ -55,7 +74,7 @@
 
 .list__content {
   margin-top: 28px;
-  width: 940px;
+  max-width: 940px;
 }
 
 .list__content>p {
