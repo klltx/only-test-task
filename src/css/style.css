@@ -89,56 +89,21 @@ hr {
   border-bottom: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1440px) {
   .wrapper {
-    max-width: 327px;
-    margin: 0 24px;
+    max-width: 1200px;
+    margin: 0 120px;
   }
 
   .title {
-    margin-top: 36px;
-    margin-bottom: 32px;
-    font-size: 30px;
+    margin-top: 66px;
+    margin-bottom: 52px;
+    font-size: 48px;
   }
 
   .list__title>img {
-    height: 14px;
-    margin-left: 28px;
-  }
-
-  .list__title>h3 {
-    font-size: 24px;
-  }
-
-  .list__item {
-    margin: 18px 0;
-  }
-
-  .list__content {
-    margin-top: 14px;
-    max-width: 327px;
-  }
-
-  .list__content>p {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 768px) {
-  .wrapper {
-    max-width: 688px;
-    margin: 0 40px;
-  }
-
-  .title {
-    margin-top: 46px;
-    margin-bottom: 42px;
-    font-size: 42px;
-  }
-
-  .list__title>img {
-    height: 14px;
-    margin-left: 28px;
+    height: 15px;
+    margin-left: 30px;
   }
 
   .list__title>h3 {
@@ -150,8 +115,8 @@ hr {
   }
 
   .list__content {
-    margin-top: 14px;
-    max-width: 612px;
+    margin-top: 18px;
+    max-width: 840px;
   }
 
   .list__content>p {
@@ -159,7 +124,7 @@ hr {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
   .wrapper {
     max-width: 1066px;
     margin: 0 107px;
@@ -194,21 +159,21 @@ hr {
   }
 }
 
-@media (min-width: 1281px) and (max-width: 1440px) {
+@media (max-width: 768px) {
   .wrapper {
-    max-width: 1200px;
-    margin: 0 120px;
+    max-width: 688px;
+    margin: 0 40px;
   }
 
   .title {
-    margin-top: 66px;
-    margin-bottom: 52px;
-    font-size: 48px;
+    margin-top: 46px;
+    margin-bottom: 42px;
+    font-size: 42px;
   }
 
   .list__title>img {
-    height: 15px;
-    margin-left: 30px;
+    height: 14px;
+    margin-left: 28px;
   }
 
   .list__title>h3 {
@@ -220,8 +185,43 @@ hr {
   }
 
   .list__content {
-    margin-top: 18px;
-    max-width: 840px;
+    margin-top: 14px;
+    max-width: 612px;
+  }
+
+  .list__content>p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    max-width: 327px;
+    margin: 0 24px;
+  }
+
+  .title {
+    margin-top: 36px;
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
+
+  .list__title>img {
+    height: 14px;
+    margin-left: 28px;
+  }
+
+  .list__title>h3 {
+    font-size: 24px;
+  }
+
+  .list__item {
+    margin: 18px 0;
+  }
+
+  .list__content {
+    margin-top: 14px;
+    max-width: 327px;
   }
 
   .list__content>p {
