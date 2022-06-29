@@ -26,6 +26,7 @@ body {
 }
 
 .list__title>img {
+  height: 20px;
   margin-left: 40px;
   transition: transform 0.4s ease-out;
 }
@@ -53,14 +54,14 @@ body {
 
 .list__item {
   margin: 28px 0;
-  transition: height 2s;
 }
 
 .list__title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  transition: color 0.15s ease-out;
+  transition: color 0.15s linear;
 }
 
 .list__title:hover {
@@ -86,4 +87,144 @@ body {
 hr {
   border: 1px solid #E6E6E6;
   border-bottom: none;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 327px;
+    margin: 0 24px;
+  }
+
+  .title {
+    margin-top: 36px;
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
+
+  .list__title>img {
+    height: 14px;
+    margin-left: 28px;
+  }
+
+  .list__title>h3 {
+    font-size: 24px;
+  }
+
+  .list__item {
+    margin: 18px 0;
+  }
+
+  .list__content {
+    margin-top: 14px;
+    max-width: 327px;
+  }
+
+  .list__content>p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .wrapper {
+    max-width: 688px;
+    margin: 0 40px;
+  }
+
+  .title {
+    margin-top: 46px;
+    margin-bottom: 42px;
+    font-size: 42px;
+  }
+
+  .list__title>img {
+    height: 14px;
+    margin-left: 28px;
+  }
+
+  .list__title>h3 {
+    font-size: 27px;
+  }
+
+  .list__item {
+    margin: 22px 0;
+  }
+
+  .list__content {
+    margin-top: 14px;
+    max-width: 612px;
+  }
+
+  .list__content>p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .wrapper {
+    max-width: 1066px;
+    margin: 0 107px;
+  }
+
+  .title {
+    margin-top: 56px;
+    margin-bottom: 48px;
+    font-size: 42px;
+  }
+
+  .list__title>img {
+    height: 15px;
+    margin-left: 30px;
+  }
+
+  .list__title>h3 {
+    font-size: 24px;
+  }
+
+  .list__item {
+    margin: 18px 0;
+  }
+
+  .list__content {
+    margin-top: 14px;
+    max-width: 640px;
+  }
+
+  .list__content>p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 120px;
+  }
+
+  .title {
+    margin-top: 66px;
+    margin-bottom: 52px;
+    font-size: 48px;
+  }
+
+  .list__title>img {
+    height: 15px;
+    margin-left: 30px;
+  }
+
+  .list__title>h3 {
+    font-size: 27px;
+  }
+
+  .list__item {
+    margin: 22px 0;
+  }
+
+  .list__content {
+    margin-top: 18px;
+    max-width: 840px;
+  }
+
+  .list__content>p {
+    font-size: 15px;
+  }
 }
